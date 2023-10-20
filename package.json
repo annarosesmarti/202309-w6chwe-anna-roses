@@ -2,10 +2,14 @@
   "name": "w6we-pokemon",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "start": "node app/js/index.js",
+    "start:dev": "node --watch app/js/index.js",
+    "build": "tsc",
+    "build:dev": "tsc -w"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +24,7 @@
     "eslint-config-xo": "^0.43.1",
     "eslint-config-xo-typescript": "^1.0.1",
     "husky": "^8.0.0",
-    "typescript": "^5.2.2"
-  },
-  "dependencies": {
+    "typescript": "^5.2.2",
     "prettier": "^3.0.3"
   }
 }
