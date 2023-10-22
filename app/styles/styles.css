@@ -1,5 +1,8 @@
 :root {
   --main-font-family: "Pokemon Solid", sans-serif;
+  --main-font-size: 1.5rem;
+  --main-color: #c7a008;
+  --secondary-color: #3c5aa6;
 }
 
 *,
@@ -19,6 +22,7 @@ html {
 
 body {
   font-size: var(--main-font-size);
+  background-color: var(--main-color);
 }
 
 ul {
@@ -38,4 +42,17 @@ a  {
 
 button {
   cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+}
+
+.image-logo {
+  width: 70%;
 }
