@@ -1,11 +1,10 @@
-import { type PokemonsList } from "../../types";
+import { type PokemonResponse } from "../../types";
 
 export const getPokemonApi = async (
   urlApi: string,
-  pokemonOffset: number,
-): Promise<PokemonsList> => {
-  const response = await fetch(`${urlApi}${pokemonOffset}`);
-  const pokemonsList = (await response.json()) as PokemonsList;
+): Promise<PokemonResponse> => {
+  const response = await fetch(urlApi);
+  const pokemonsList = (await response.json()) as PokemonResponse;
 
   return pokemonsList;
 };
