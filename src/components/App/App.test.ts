@@ -2,8 +2,9 @@ import App from "./App";
 
 describe("Given an App component", () => {
   describe("When it receies a body parent element", () => {
-    test("Then it should show a pokemon logo in a header", () => {
+    test("Then it should show a main-header class", () => {
       const body = document.querySelector("body")!;
+      const className = "main-header";
 
       const app = new App(body);
       app.render();
@@ -11,7 +12,7 @@ describe("Given an App component", () => {
       const heading = body.querySelector("header");
 
       expect(heading).not.toBeNull();
-      expect(heading?.className).toBe("main-header");
+      expect(heading?.className).toBe(className);
     });
   });
 });

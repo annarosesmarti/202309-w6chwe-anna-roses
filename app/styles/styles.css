@@ -1,0 +1,58 @@
+:root {
+  --main-font-family: "Pokemon Solid", sans-serif;
+  --main-font-size: 1.5rem;
+  --main-color: #c7a008;
+  --secondary-color: #3c5aa6;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+h1 {
+  margin: 0;
+}
+
+html {
+  font-family: var(--main-font-family);
+}
+
+body {
+  font-size: var(--main-font-size);
+  background-color: var(--main-color);
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a  {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+}
+
+.image-logo {
+  width: 70%;
+}
