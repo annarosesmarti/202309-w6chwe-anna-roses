@@ -1,10 +1,12 @@
 import Component from "../Component/Component";
-import { type PokemonName } from "../../types";
 
 class PokemonsList extends Component {
-  constructor(parentElement: Element, pokemon: PokemonName[]) {
+  constructor(parentElement: Element) {
     super(parentElement, "ul", "pokemon-list");
-    this.pokemon = pokemon;
+  }
+
+  protected populate(): void {
+    throw new Error("Method not implemented.");
   }
 }
 
