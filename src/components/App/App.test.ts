@@ -1,7 +1,7 @@
 import App from "./App";
 
 describe("Given an App component", () => {
-  describe("When it receies a body parent element", () => {
+  describe("When it receives a body parent element", () => {
     test("Then it should show a main-header class", () => {
       const body = document.querySelector("body")!;
       const className = "main-header";
