@@ -1,5 +1,5 @@
 import { type PokemonName } from "../../types";
-import Component from "../Component/Component";
+import Component from "../Component/Component.js";
 
 class PokemonCard extends Component {
   constructor(
@@ -11,8 +11,7 @@ class PokemonCard extends Component {
 
   protected populate(): void {
     this.element.innerHTML = `
-      <span class="pokemon-card__name" height="309" width="842">${this.pokemon.name}
-      </span>
+      <span class="pokemon-card__name">${this.pokemon.name}</span>
       <a href="" alt="pokemon ${this.pokemon.name} image" class="pokemon-card__url">${this.pokemon.url}
       </a>
     `;
